@@ -39,6 +39,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void goToMain()
     {
+        PersistentData.Instance.SetScore(0);
         Time.timeScale = 1f;
         SceneManager.LoadScene("LabMenu");
     }
